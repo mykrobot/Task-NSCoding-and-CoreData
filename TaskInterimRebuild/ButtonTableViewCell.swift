@@ -51,6 +51,6 @@ protocol ButtonTableviewCellDelegate {
 extension ButtonTableViewCell {
     func updateWithTask(task: Task) {
         primaryLabel?.text = task.name
-        updateButton(task.isComplete.boolValue)
+        updateButton(task.isComplete!.boolValue)
     }
 }

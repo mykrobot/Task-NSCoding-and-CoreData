@@ -13,10 +13,13 @@
 		B480C6591C98A79E00057146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B480C6571C98A79E00057146 /* LaunchScreen.storyboard */; };
 		B480C6611C98A92200057146 /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C6601C98A92200057146 /* TaskListTableViewController.swift */; };
 		B480C6631C98A93500057146 /* TaskDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C6621C98A93500057146 /* TaskDetailTableViewController.swift */; };
-		B480C6651C98AA1000057146 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C6641C98AA1000057146 /* Task.swift */; };
 		B480C6671C98BA7000057146 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C6661C98BA7000057146 /* TaskController.swift */; };
 		B480C6691C98CB7200057146 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C6681C98CB7200057146 /* DateHelper.swift */; };
 		B480C66B1C98D3FA00057146 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C66A1C98D3FA00057146 /* ButtonTableViewCell.swift */; };
+		B480C66D1C98F23300057146 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C66C1C98F23300057146 /* Stack.swift */; };
+		B480C6701C98F2B600057146 /* TaskInterim.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B480C66E1C98F2B600057146 /* TaskInterim.xcdatamodeld */; };
+		B480C6731C98F48200057146 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C6711C98F48200057146 /* Task+CoreDataProperties.swift */; };
+		B480C6741C98F48200057146 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480C6721C98F48200057146 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +31,13 @@
 		B480C65A1C98A79E00057146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B480C6601C98A92200057146 /* TaskListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
 		B480C6621C98A93500057146 /* TaskDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailTableViewController.swift; sourceTree = "<group>"; };
-		B480C6641C98AA1000057146 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		B480C6661C98BA7000057146 /* TaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		B480C6681C98CB7200057146 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		B480C66A1C98D3FA00057146 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		B480C66C1C98F23300057146 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		B480C66F1C98F2B600057146 /* TaskInterim.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskInterim.xcdatamodel; sourceTree = "<group>"; };
+		B480C6711C98F48200057146 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B480C6721C98F48200057146 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,8 @@
 		B480C6421C98A79E00057146 = {
 			isa = PBXGroup;
 			children = (
+				B480C6711C98F48200057146 /* Task+CoreDataProperties.swift */,
+				B480C6721C98F48200057146 /* Task.swift */,
 				B480C64D1C98A79E00057146 /* TaskInterimRebuild */,
 				B480C64C1C98A79E00057146 /* Products */,
 			);
@@ -66,7 +74,8 @@
 			children = (
 				B480C64E1C98A79E00057146 /* AppDelegate.swift */,
 				B480C6681C98CB7200057146 /* DateHelper.swift */,
-				B480C6641C98AA1000057146 /* Task.swift */,
+				B480C66C1C98F23300057146 /* Stack.swift */,
+				B480C66E1C98F2B600057146 /* TaskInterim.xcdatamodeld */,
 				B480C6661C98BA7000057146 /* TaskController.swift */,
 				B480C6601C98A92200057146 /* TaskListTableViewController.swift */,
 				B480C6621C98A93500057146 /* TaskDetailTableViewController.swift */,
@@ -150,11 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B480C6651C98AA1000057146 /* Task.swift in Sources */,
 				B480C6611C98A92200057146 /* TaskListTableViewController.swift in Sources */,
 				B480C64F1C98A79E00057146 /* AppDelegate.swift in Sources */,
+				B480C6741C98F48200057146 /* Task.swift in Sources */,
 				B480C6691C98CB7200057146 /* DateHelper.swift in Sources */,
+				B480C66D1C98F23300057146 /* Stack.swift in Sources */,
+				B480C6731C98F48200057146 /* Task+CoreDataProperties.swift in Sources */,
 				B480C6671C98BA7000057146 /* TaskController.swift in Sources */,
+				B480C6701C98F2B600057146 /* TaskInterim.xcdatamodeld in Sources */,
 				B480C66B1C98D3FA00057146 /* ButtonTableViewCell.swift in Sources */,
 				B480C6631C98A93500057146 /* TaskDetailTableViewController.swift in Sources */,
 			);
@@ -306,8 +318,22 @@
 				B480C65F1C98A79E00057146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B480C66E1C98F2B600057146 /* TaskInterim.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B480C66F1C98F2B600057146 /* TaskInterim.xcdatamodel */,
+			);
+			currentVersion = B480C66F1C98F2B600057146 /* TaskInterim.xcdatamodel */;
+			path = TaskInterim.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B480C6431C98A79E00057146 /* Project object */;
 }

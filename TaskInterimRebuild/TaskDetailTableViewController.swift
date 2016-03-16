@@ -54,7 +54,7 @@ class TaskDetailTableViewController: UITableViewController {
             task.dueDate = dueDate
             task.notes = notes
         } else {
-            let newTask = Task(name: name!, notes: notes, dueDate: dueDate, isComplete: false)
+            let newTask = Task(name: name!, notes: notes, dueDate: dueDate)
             TaskController.sharedController.addTask(newTask)
         }
     }

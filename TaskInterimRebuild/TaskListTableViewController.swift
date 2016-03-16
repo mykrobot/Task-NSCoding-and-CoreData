@@ -109,7 +109,7 @@ extension TaskListTableViewController: ButtonTableviewCellDelegate {
     func buttonCellButtonTapped(sender: ButtonTableViewCell) {
         let indexPath = tableView.indexPathForCell(sender)!
         let task = TaskController.sharedController.tasksArray[indexPath.row]
-        task.isComplete = !task.isComplete.boolValue
+        task.isComplete = !task.isComplete!.boolValue
         TaskController.sharedController.saveToPersistentStorage()
         tableView.reloadData()
     }
