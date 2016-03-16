@@ -133,15 +133,15 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Notes" id="6YM-pj-Agd">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="J81-c6-gy0">
-                                        <rect key="frame" x="0.0" y="236" width="600" height="154"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="366" id="J81-c6-gy0">
+                                        <rect key="frame" x="0.0" y="236" width="600" height="366"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J81-c6-gy0" id="I1g-jh-vea">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="154"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="366"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kt8-kg-GJl">
-                                                    <rect key="frame" x="8" y="8" width="584" height="138"/>
+                                                    <rect key="frame" x="8" y="8" width="584" height="350"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -149,10 +149,10 @@
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kt8-kg-GJl" firstAttribute="leading" secondItem="I1g-jh-vea" secondAttribute="leadingMargin" id="869-0J-yGb"/>
-                                                <constraint firstItem="kt8-kg-GJl" firstAttribute="trailing" secondItem="I1g-jh-vea" secondAttribute="trailingMargin" id="NAy-lu-aOy"/>
-                                                <constraint firstItem="kt8-kg-GJl" firstAttribute="centerY" secondItem="I1g-jh-vea" secondAttribute="centerY" id="SM7-46-435"/>
-                                                <constraint firstItem="kt8-kg-GJl" firstAttribute="top" secondItem="I1g-jh-vea" secondAttribute="topMargin" id="yh4-Ge-0oJ"/>
+                                                <constraint firstItem="kt8-kg-GJl" firstAttribute="leading" secondItem="I1g-jh-vea" secondAttribute="leadingMargin" id="BbZ-7U-8tS"/>
+                                                <constraint firstItem="kt8-kg-GJl" firstAttribute="centerY" secondItem="I1g-jh-vea" secondAttribute="centerY" id="Op2-OB-fes"/>
+                                                <constraint firstItem="kt8-kg-GJl" firstAttribute="top" secondItem="I1g-jh-vea" secondAttribute="topMargin" id="Syg-Bn-8A6"/>
+                                                <constraint firstItem="kt8-kg-GJl" firstAttribute="trailing" secondItem="I1g-jh-vea" secondAttribute="trailingMargin" id="wd9-MG-1HA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -176,6 +176,7 @@
                         <outlet property="dueDateTextField" destination="hpQ-tq-5ke" id="hpJ-oj-9o7"/>
                         <outlet property="nameTextField" destination="TV5-ni-gsk" id="d3N-xb-kvI"/>
                         <outlet property="notesTextView" destination="kt8-kg-GJl" id="YbV-TN-xMa"/>
+                        <outlet property="tapGesture" destination="YAF-3H-SLr" id="XnE-Wr-AMR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksN-Jw-fOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +192,7 @@
                 </datePicker>
                 <tapGestureRecognizer id="YAF-3H-SLr">
                     <connections>
-                        <action selector="userTappedView:" destination="SwY-dg-3yP" id="lMh-gg-fZj"/>
+                        <action selector="userTappedView:" destination="SwY-dg-3yP" id="el4-B0-nHM"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

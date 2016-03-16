@@ -14,6 +14,7 @@ class TaskDetailTableViewController: UITableViewController {
     @IBOutlet weak var dueDateTextField: UITextField!
     @IBOutlet weak var notesTextView: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var tapGesture: UITapGestureRecognizer!
     
     var task: Task?
     var dueDateValue: NSDate?
@@ -21,6 +22,8 @@ class TaskDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dueDateTextField.inputView = datePicker
+        self.view.addGestureRecognizer(tapGesture)
+    
     }
 
     override func didReceiveMemoryWarning() {
