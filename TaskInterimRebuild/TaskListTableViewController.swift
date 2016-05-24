@@ -26,13 +26,24 @@ class TaskListTableViewController: UITableViewController {
     }
     
     
-    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
     
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return TaskController.sharedController.tasksArray.count
+        
+        switch section {
+        case 0:
+            return TaskController.sharedController.tasksArray.count
+        case 1:
+            return 1
+        default:
+            return 1
+        }
+        
     }
 
     

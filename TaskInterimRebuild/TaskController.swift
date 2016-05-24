@@ -36,7 +36,7 @@ class TaskController {
         do {
             try moc.save()
         } catch {
-            print("Hey, there is an error. \(__FILE__) \(__LINE__)")
+            print("Hey, there is an error. \(#file) \(#line)")
         }
     }
     
